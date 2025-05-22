@@ -13,7 +13,7 @@
     const params = new URLSearchParams(window.location.search);
     const code = params.get("code");
 
-    fetch('https://ggdmkditpspgzoebdrdj.supabase.co/storage/v1/object/public/clues//clues.json?t=${Date.now()}`)
+    fetch('https://ggdmkditpspgzoebdrdj.supabase.co/storage/v1/object/public/clues//clues.json')
       .then(res => res.json())
       .then(data => {
         const country = data[code];
