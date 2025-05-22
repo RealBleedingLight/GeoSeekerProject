@@ -13,7 +13,7 @@
     const params = new URLSearchParams(window.location.search);
     const code = params.get("code");
 
-    fetch('https://gs-backend.onrender.com/clues.json')
+    fetch('https://gs-backend-wkwp.onrender.com/clues.json')
       .then(res => res.json())
       .then(data => {
         const country = data[code];
