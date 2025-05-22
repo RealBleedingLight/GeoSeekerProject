@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Country Clues</title>
+</head>
+<body>
+  <h1 id="country-name">Loading...</h1>
+  <div id="clues"></div>
+  <a href="index.html">← Back to Map</a>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+
+    fetch('data/clues.json')
+      .then(res => res.json())
+      .then(data => {
+        const country = data[code];
+        if (!country) {
+          document.getElementById("country-name").innerText = "No clues found for this country.";
+          return;
+        }
+
+        document.getElementById("country-name").innerText = `Clues for ${country.countryName}`;
+        const cluesDiv = document.getElementById("clues");
+
+        const grouped = {};
+        country.clues.forEach(clue => {
+          if (!grouped[clue.feature]) grouped[clue.feature] = [];
+          grouped[clue.feature].push(clue);
+        });
+
+        for (const [feature, items] of Object.entries(grouped)) {
+          const section = document.createElement("section");
+          section.innerHTML = `<h2>${feature}</h2>` +
+            items.map(item => `
+              <div>
+                <p>${item.clue}</p>
+                ${item.image ? `<img src="${item.image}" alt="${feature}" style="max-width:200px;">` : ''}
+              </div>
+            `).join("");
+          cluesDiv.appendChild(section);
+        }
+      })
+      .catch(err => {
+        document.getElementById("country-name").innerText = "Failed to load clues.";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

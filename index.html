@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GeoGuessr World Clue Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    html, body, #map { height: 100%; margin: 0; padding: 0; }
+    #tagbar {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    #tagbar button { margin: 2px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="tagbar">
+    <button onclick="location.href='features/bollards.html'">Bollards</button>
+    <button onclick="location.href='features/plates.html'">Plates</button>
+    <button onclick="location.href='features/poles.html'">Poles</button>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([20, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © OpenStreetMap contributors'
+    }).addTo(map);
+
+    fetch('countries.geojson')
+      .then(response => response.json())
+      .then(data => {
+        L.geoJSON(data, {
+          style: feature => ({
+            color: '#333',
+            weight: 1,
+            fillColor: '#2E8B57',
+            fillOpacity: 0.4
+          }),
+          onEachFeature: (feature, layer) => {
+            const code = feature.properties?.["ISO3166-1-Alpha-2"];
+            if (code) {
+              layer.on('click', () => {
+                window.location.href = `country.html?code=${code}`;
+              });
+            }
+          }
+        }).addTo(map);
+      })
+      .catch(error => console.error("Error loading GeoJSON:", error));
+  </script>
+</body>
+</html>
