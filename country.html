@@ -13,25 +13,16 @@
     const params = new URLSearchParams(window.location.search);
     const code = params.get("code")?.toUpperCase();
 
-    fetch('https://ggdmkditpspgzoebdrdj.supabase.co/storage/v1/object/public/clues/clues.json?t=' + Date.now())
-      .then(res => res.json())
+    fetch(`/api/clues?code=${code}`)
+      .then(res => {
+        if (!res.ok) throw new Error(res.statusText);
+        return res.json();
+      })
       .then(data => {
-        const country = data[code];
-        if (!country) {
-          document.getElementById("country-name").innerText = "No clues found for this country.";
-          return;
-        }
-
-        document.getElementById("country-name").innerText = `Clues for ${country.countryName}`;
+        document.getElementById("country-name").innerText = `Clues for ${data.countryName}`;
         const cluesDiv = document.getElementById("clues");
 
-        const grouped = {};
-        country.clues.forEach(clue => {
-          if (!grouped[clue.feature]) grouped[clue.feature] = [];
-          grouped[clue.feature].push(clue);
-        });
-
-        for (const [feature, items] of Object.entries(grouped)) {
+        for (const [feature, items] of Object.entries(data.clues)) {
           const section = document.createElement("section");
           section.innerHTML = `<h2>${feature}</h2>` +
             items.map(item => `
