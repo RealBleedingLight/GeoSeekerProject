@@ -119,10 +119,11 @@
           <section class="section">
             <button class="section-header" onclick={() => toggleSection(group.slug)}>
               <h3>
-                <button class="cat-link" onclick={(e) => { e.stopPropagation(); onCategoryClick(group.slug); }}>
+                <!-- svelte-ignore a11y_no_static_element_interactions -->
+                <span class="cat-link" role="link" tabindex="0" onclick={(e) => { e.stopPropagation(); onCategoryClick(group.slug); }} onkeydown={(e) => { if (e.key === 'Enter') { e.stopPropagation(); onCategoryClick(group.slug); } }}>
                   {#if group.icon}<span>{group.icon}</span>{/if}
                   {group.label}
-                </button>
+                </span>
               </h3>
               <span class="section-count">{group.clues.length}</span>
               <span class="chevron" class:collapsed={collapsedSections.has(group.slug)}>
@@ -199,10 +200,11 @@
           <section class="section">
             <button class="section-header" onclick={() => toggleSection(country.code)}>
               <h3>
-                <button class="country-link" onclick={(e) => { e.stopPropagation(); onCountryClick(country.code, country.name); }}>
+                <!-- svelte-ignore a11y_no_static_element_interactions -->
+                <span class="country-link" role="link" tabindex="0" onclick={(e) => { e.stopPropagation(); onCountryClick(country.code, country.name); }} onkeydown={(e) => { if (e.key === 'Enter') { e.stopPropagation(); onCountryClick(country.code, country.name); } }}>
                   <span class="flag">{countryFlag(country.code)}</span>
                   {country.name}
-                </button>
+                </span>
               </h3>
               <span class="section-count">{country.clues.length}</span>
               <span class="chevron" class:collapsed={collapsedSections.has(country.code)}>
