@@ -11,12 +11,8 @@
   let L;
   let currentTheme = 'light';
 
-  const TILES = {
-    light: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-    dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-  };
-
-  const ATTRIBUTION = '&copy; <a href="https://carto.com">CARTO</a> &copy; <a href="https://openstreetmap.org">OSM</a>';
+  const TILE_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+  const ATTRIBUTION = '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>';
 
   function getStyle(feature) {
     const code = feature.properties?.['ISO3166-1-Alpha-2'];
@@ -36,6 +32,14 @@
       fillColor: hasClues ? '#2d6a4f' : '#94d2bd',
       fillOpacity: hasClues ? 0.55 : 0.3
     };
+  }
+
+  function updateTileTheme(t) {
+    if (!mapEl) return;
+    const tilePane = mapEl.querySelector('.leaflet-tile-pane');
+    if (tilePane) {
+      tilePane.style.filter = t === 'dark' ? 'invert(1) hue-rotate(180deg) brightness(0.8) contrast(1.2)' : 'none';
+    }
   }
 
   onMount(async () => {
@@ -59,7 +63,8 @@
       .addAttribution(ATTRIBUTION)
       .addTo(map);
 
-    tileLayer = L.tileLayer(TILES[currentTheme]).addTo(map);
+    tileLayer = L.tileLayer(TILE_URL, { attribution: ATTRIBUTION }).addTo(map);
+    updateTileTheme(currentTheme);
 
     const response = await fetch('/countries.geojson');
     const geojson = await response.json();
@@ -104,7 +109,7 @@
   $effect(() => {
     const unsub = theme.subscribe(t => {
       currentTheme = t;
-      if (tileLayer) tileLayer.setUrl(TILES[t]);
+      updateTileTheme(t);
       if (geoJsonLayer) geoJsonLayer.setStyle(getStyle);
     });
     return unsub;

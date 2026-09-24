@@ -1,6 +1,7 @@
 <script>
   let {
     countryCode = '',
+    countryName = '',
     categories = [],
     existingClue = null,
     onSave = () => {},
@@ -25,6 +26,7 @@
 
     const body = {
       country_code: countryCode,
+      country_name: countryName,
       category,
       clue: clueText.trim(),
       image_url: imageUrl.trim()

@@ -139,6 +139,7 @@
                   {#if editingClue === clue.id}
                     <ClueForm
                       countryCode={data.country.code}
+                      countryName={data.country.name}
                       categories={allCategories}
                       existingClue={clue}
                       onSave={handleSaved}
@@ -158,6 +159,7 @@
                   {#if addingToSection === group.slug}
                     <ClueForm
                       countryCode={data.country.code}
+                      countryName={data.country.name}
                       categories={allCategories}
                       existingClue={null}
                       onSave={handleSaved}
@@ -220,6 +222,7 @@
                   {#if editingClue === clue.id}
                     <ClueForm
                       countryCode={country.code}
+                      countryName={country.name}
                       categories={allCategories}
                       existingClue={clue}
                       onSave={handleSaved}
@@ -239,6 +242,7 @@
                   {#if addingToSection === country.code}
                     <ClueForm
                       countryCode={country.code}
+                      countryName={country.name}
                       categories={allCategories}
                       existingClue={null}
                       onSave={handleSaved}

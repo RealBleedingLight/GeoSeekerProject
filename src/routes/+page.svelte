@@ -29,7 +29,11 @@
     drawerOpen = true;
 
     const res = await fetch(`/api/clues?country=${code}`);
-    drawerData = await res.json();
+    if (res.ok) {
+      drawerData = await res.json();
+    } else {
+      drawerData = { country: { code, name }, clues: [] };
+    }
     drawerLoading = false;
   }
 

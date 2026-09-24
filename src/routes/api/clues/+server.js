@@ -60,15 +60,21 @@ export async function POST({ request, locals }) {
     return json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const { country_code, category, clue, image_url } = await request.json();
+  const { country_code, country_name, category, clue, image_url } = await request.json();
 
   if (!country_code || !category || !clue) {
     return json({ error: 'country_code, category, and clue are required' }, { status: 400 });
   }
 
+  const code = country_code.toUpperCase();
+  const existing = await sql`SELECT code FROM countries WHERE code = ${code}`;
+  if (existing.length === 0) {
+    await sql`INSERT INTO countries (code, name) VALUES (${code}, ${country_name || code})`;
+  }
+
   const [row] = await sql`
     INSERT INTO clues (country_code, category, clue, image_url)
-    VALUES (${country_code.toUpperCase()}, ${category.toLowerCase()}, ${clue}, ${image_url || ''})
+    VALUES (${code}, ${category.toLowerCase()}, ${clue}, ${image_url || ''})
     RETURNING id, country_code, category, clue, image_url, sort_order, created_at
   `;
 
