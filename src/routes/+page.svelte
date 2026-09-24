@@ -3,6 +3,8 @@
   import CategoryBar from '$lib/components/CategoryBar.svelte';
   import AdminBar from '$lib/components/AdminBar.svelte';
   import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+  import ClueDrawer from '$lib/components/ClueDrawer.svelte';
+  import CategoryModal from '$lib/components/CategoryModal.svelte';
   import { isAdmin } from '$lib/stores/admin';
 
   let { data } = $props();
@@ -89,6 +91,24 @@
   </header>
 
   <Map {countriesWithClues} onCountryClick={openCountry} />
+
+  <ClueDrawer
+    open={drawerOpen}
+    mode={drawerMode}
+    data={drawerData}
+    loading={drawerLoading}
+    isAdmin={$isAdmin}
+    onClose={closeDrawer}
+    onCategoryClick={openCategory}
+    onCountryClick={openCountry}
+    onDataChanged={refreshData}
+  />
+
+  <CategoryModal
+    open={categoryModalOpen}
+    onClose={() => (categoryModalOpen = false)}
+    onChanged={refreshCategories}
+  />
 </div>
 
 <style>
