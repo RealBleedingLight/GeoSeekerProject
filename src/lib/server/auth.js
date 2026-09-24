@@ -1,11 +1,11 @@
-import { ADMIN_PASSWORD } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { createHmac } from 'crypto';
 
 export function createSessionToken() {
-  return createHmac('sha256', ADMIN_PASSWORD).update('geoseeker-admin').digest('hex');
+  return createHmac('sha256', env.ADMIN_PASSWORD).update('geoseeker-admin').digest('hex');
 }
 
 export function verifySessionToken(token) {
-  if (!token) return false;
+  if (!token || !env.ADMIN_PASSWORD) return false;
   return token === createSessionToken();
 }

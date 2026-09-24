@@ -1,4 +1,4 @@
 import { neon } from '@neondatabase/serverless';
-import { DATABASE_URL } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
-export const sql = neon(DATABASE_URL);
+export const sql = neon(env.DATABASE_URL);

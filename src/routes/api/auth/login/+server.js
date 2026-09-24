@@ -1,11 +1,11 @@
 import { json } from '@sveltejs/kit';
-import { ADMIN_PASSWORD } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { createSessionToken } from '$lib/server/auth';
 
 export async function POST({ request, cookies }) {
   const { password } = await request.json();
 
-  if (password !== ADMIN_PASSWORD) {
+  if (password !== env.ADMIN_PASSWORD) {
     return json({ error: 'Invalid password' }, { status: 401 });
   }
 
