@@ -1,16 +1,25 @@
-CREATE TABLE IF NOT EXISTS countries (
+CREATE TABLE countries (
   code CHAR(2) PRIMARY KEY,
   name VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS clues (
+CREATE TABLE categories (
+  slug VARCHAR(50) PRIMARY KEY,
+  label VARCHAR(100) NOT NULL,
+  icon VARCHAR(50) DEFAULT '',
+  sort_order INT DEFAULT 0
+);
+
+CREATE TABLE clues (
   id SERIAL PRIMARY KEY,
   country_code CHAR(2) NOT NULL REFERENCES countries(code),
-  feature VARCHAR(50) NOT NULL,
+  category VARCHAR(50) NOT NULL REFERENCES categories(slug),
   clue TEXT NOT NULL,
   image_url TEXT DEFAULT '',
-  created_at TIMESTAMPTZ DEFAULT NOW()
+  sort_order INT DEFAULT 0,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 CREATE INDEX idx_clues_country ON clues(country_code);
-CREATE INDEX idx_clues_feature ON clues(feature);
+CREATE INDEX idx_clues_category ON clues(category);

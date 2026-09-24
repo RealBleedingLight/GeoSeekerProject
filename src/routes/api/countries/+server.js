@@ -1,8 +1,7 @@
-import { getDb } from './db.js';
+import { json } from '@sveltejs/kit';
+import { sql } from '$lib/server/db';
 
-export default async function handler(req, res) {
-  const sql = getDb();
-
+export async function GET() {
   const rows = await sql`
     SELECT c.code, c.name, COUNT(cl.id)::int AS clue_count
     FROM countries c
@@ -10,6 +9,5 @@ export default async function handler(req, res) {
     GROUP BY c.code, c.name
     ORDER BY c.name
   `;
-
-  res.json(rows);
+  return json(rows);
 }
