@@ -1,0 +1,765 @@
+{
+  "FI": {
+    "name": "Finland",
+    "clues": [
+      {"category": "bollards", "clue": "Cylindrical bollards when viewed from the front — a shape not shared with other Nordic countries."},
+      {"category": "road-markings", "clue": "Solid white side lines (when present) and a center line that can be white or yellow, sometimes with a secondary stripe."},
+      {"category": "road-signs", "clue": "Minor directional signs have white text on blue background with a bold arrow on the sides. Warning signs are triangular with red border and yellow background."},
+      {"category": "language", "clue": "Finnish uses special characters ä and ö. Often has double vowels and long words. Street names end in '-katu' or '-ntie'."},
+      {"category": "landscape", "clue": "Flat terrain with dense forests. Dirt and gravel roads are common, especially in rural areas."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "utility-poles", "clue": "Standard wooden or concrete poles without distinctive national features."}
+    ]
+  },
+  "SE": {
+    "name": "Sweden",
+    "clues": [
+      {"category": "bollards", "clue": "Black-and-white bollards, often with a grey reflector. Near intersections, reflectors can be orange. Come in various shapes: wedge, round, or thin and curved."},
+      {"category": "road-markings", "clue": "White dashed side lines with a white center line. The gaps between side dashes are notably longer than the dashes themselves."},
+      {"category": "road-signs", "clue": "Directional signs are blue with white text and a thin arrow on the sides. Chevrons use distinctive yellow and blue colors."},
+      {"category": "language", "clue": "Swedish uses special characters å, ä, and ö. Street names often end in '-gatan' or '-vägen'."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Mostly flat with forests. Less dirt roads than Finland."}
+    ]
+  },
+  "NO": {
+    "name": "Norway",
+    "clues": [
+      {"category": "road-markings", "clue": "Yellow center lines with white side lines — distinctive among Nordic countries. Long dashed white outer lines."},
+      {"category": "license-plates", "clue": "Commercial vehicles use green license plates."},
+      {"category": "road-signs", "clue": "Yellow directional signs. Warning signs are triangular with red border and white background."},
+      {"category": "language", "clue": "Norwegian uses special characters å, æ, and ø. Street names end in '-vei'/'-veien' or '-gate'/'-gata'."},
+      {"category": "landscape", "clue": "Predominantly undulating, hilly, or mountainous — the most mountainous of the Nordic countries. Fjords are common."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "DK": {
+    "name": "Denmark",
+    "clues": [
+      {"category": "bollards", "clue": "Front features a yellow section that is absent on the rear. Abundant throughout the country."},
+      {"category": "license-plates", "clue": "Commercial vehicles have yellow plates front and back. Regular vehicles have standard EU white plates with blue stripe."},
+      {"category": "road-markings", "clue": "Main roads have distinctly short-dashed edge markings."},
+      {"category": "road-signs", "clue": "Directional signs have white background with red text — unique among Nordic countries. Settlement signs show black on white with a village illustration."},
+      {"category": "language", "clue": "Danish uses special characters å, æ, and ø (same as Norwegian). Street names end in '-vej' and '-gade'."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Very flat terrain — the flattest of the Nordic countries."}
+    ]
+  },
+  "IS": {
+    "name": "Iceland",
+    "clues": [
+      {"category": "bollards", "clue": "Recognizable by their distinct yellow color and yellow top edge."},
+      {"category": "license-plates", "clue": "Lack the blue EU vertical strip on the left. Elongated and white."},
+      {"category": "road-markings", "clue": "White dashed edge markings. Roads often have a distinctive dark color. Grass extends right up to the road edge."},
+      {"category": "road-signs", "clue": "Yellow background behind pedestrian signs (unique to Iceland). Yellow and black directional signs."},
+      {"category": "language", "clue": "Icelandic uses unique characters Þ (thorn) and ð (eth)."},
+      {"category": "camera-coverage", "clue": "Street View car often has a visible aerial antenna. Sometimes shows car painted in white, red, and blue."},
+      {"category": "landscape", "clue": "Near-total absence of vegetation other than grass. Flat roads with hills and mountains visible in distance. Volcanic terrain."}
+    ]
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "clues": [
+      {"category": "bollards", "clue": "Black and white sections with a large red rectangle on top."},
+      {"category": "license-plates", "clue": "White front plate, yellow rear plate. Long EU-style format."},
+      {"category": "road-markings", "clue": "Long dashes in the center of roads. White edge lines."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English. In Wales, bilingual English/Welsh signs are common."},
+      {"category": "road-signs", "clue": "M roads for motorways, A/B roads with zoning system. Red circular prohibition signs."}
+    ]
+  },
+  "IE": {
+    "name": "Ireland",
+    "clues": [
+      {"category": "road-markings", "clue": "Yellow dashed edge lines on roads — quite common and distinctive in Europe."},
+      {"category": "road-signs", "clue": "The only place in Europe with yellow diamond-shaped warning signs. Bilingual English/Gaelic signs throughout."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English with Irish Gaelic on signs. Dual-language signage throughout the country."},
+      {"category": "landscape", "clue": "Green rolling hills, stone walls, and frequent overcast skies."}
+    ]
+  },
+  "FR": {
+    "name": "France",
+    "clues": [
+      {"category": "bollards", "clue": "Two types, both with the same distinct curved shape. Feature either a gray or red reflector strip running around them."},
+      {"category": "road-markings", "clue": "Very long white dashes along both sides of the road on mainland. Corsica has shorter dashes."},
+      {"category": "road-signs", "clue": "Yellow rectangles mark departmental roads. Blue directional signs. Bilingual signs in Brittany (French/Breton)."},
+      {"category": "utility-poles", "clue": "Poles have no holes but rather indents — distinctive from other European pole styles."},
+      {"category": "language", "clue": "French. 'Rue' means street. Accented characters: é, è, ê, ç."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "ES": {
+    "name": "Spain",
+    "clues": [
+      {"category": "bollards", "clue": "Wedge-shaped bollards with an orange rectangular reflector on front and two white circular reflectors on back."},
+      {"category": "road-signs", "clue": "Red sign borders extend to the edge with no outline. Pedestrian crossing signs have 8 stripes. Milestone markers are bright green, red, or yellow."},
+      {"category": "language", "clue": "Spanish. 'CALLE' means street. Characters: ñ, ¿, ¡."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "utility-poles", "clue": "Ladder-style poles are common."},
+      {"category": "road-markings", "clue": "Guardrails typically have orange reflectors."}
+    ]
+  },
+  "PT": {
+    "name": "Portugal",
+    "clues": [
+      {"category": "license-plates", "clue": "Yellow vertical stripe on the right side of the plate alongside the blue EU stripe on the left — the only European country with this feature."},
+      {"category": "language", "clue": "Portuguese. Similar to Spanish but with ã, õ, ç. Words often end in '-ção'."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Terra-cotta rooftops. Hilly terrain in the north, flatter in the south."}
+    ]
+  },
+  "IT": {
+    "name": "Italy",
+    "clues": [
+      {"category": "bollards", "clue": "Vertical red rectangle inside a black diagonal strip on the front, extending to the top. White rectangle on the rear."},
+      {"category": "license-plates", "clue": "Light blue vertical stripes on both left and right edges of the plate."},
+      {"category": "road-signs", "clue": "Blue directional arrows with a white end pointing to towns."},
+      {"category": "language", "clue": "Italian. Most words end in a vowel. 'VIA' means street on signs."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "camera-coverage", "clue": "Generation 4 Street View coverage with blue tinge visible when panning down."}
+    ]
+  },
+  "DE": {
+    "name": "Germany",
+    "clues": [
+      {"category": "bollards", "clue": "White vertical strip on the front and two white dots on the rear."},
+      {"category": "language", "clue": "German. Features umlauts (ä, ü, ö) and the unique 'ß' (eszett) character."},
+      {"category": "camera-coverage", "clue": "New generation 4 Street View coverage (released 2023) with a blue tinge. Previously only had coverage near big cities."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "road-signs", "clue": "White on blue highway signs. Yellow mailboxes (Deutsche Post) are common."}
+    ]
+  },
+  "NL": {
+    "name": "Netherlands",
+    "clues": [
+      {"category": "license-plates", "clue": "Yellow rear license plates (shared with UK). Standard EU white front plates."},
+      {"category": "road-signs", "clue": "Blue arrow signs with white lettering pointing to nearest towns."},
+      {"category": "language", "clue": "Dutch. Abundance of 'z' and 'w' letters. 'ij' combinations common. 'weg' (road) and 'straat' (street) suffixes."},
+      {"category": "landscape", "clue": "Extremely flat terrain. Canals and cycling infrastructure everywhere."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "BE": {
+    "name": "Belgium",
+    "clues": [
+      {"category": "license-plates", "clue": "Red lettering on plates — appears as a faint red blur on Street View. Distinctive from most European countries."},
+      {"category": "utility-poles", "clue": "Square-shaped poles with small holes running up them, similar to Thai poles."},
+      {"category": "language", "clue": "Dual-language signage: Dutch in the north (Flanders), French in the south (Wallonia). 'weg' and 'straat' suffixes in Dutch areas."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "CH": {
+    "name": "Switzerland",
+    "clues": [
+      {"category": "bollards", "clue": "Curved-cylindrical shape, distinctive from neighboring countries."},
+      {"category": "license-plates", "clue": "Lack the blue EU vertical stripe. Front plates are less elongated. CH stickers common on vehicles."},
+      {"category": "language", "clue": "German using 'ss' instead of 'ß'. Italian in the south, French in the west. Multilingual signs in some areas."},
+      {"category": "landscape", "clue": "Tall mountains common. Many wooden houses with window shutters. Terracotta-colored slanting roofs."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "AT": {
+    "name": "Austria",
+    "clues": [
+      {"category": "bollards", "clue": "Blackish or dark red reflectors with a distinctive black hat/top — one of the easiest ways to identify Austria. Unique combination not found elsewhere."},
+      {"category": "language", "clue": "German with umlauts (ä, ü, ö) and 'ß'. 'EINBAHN' marks one-way streets."},
+      {"category": "road-signs", "clue": "Blue street signs. Similar to German signs but with Austrian-specific styling."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "PL": {
+    "name": "Poland",
+    "clues": [
+      {"category": "bollards", "clue": "Red diagonal stripe wrapping around the bollard."},
+      {"category": "road-markings", "clue": "Double middle lines are very common throughout the country."},
+      {"category": "road-signs", "clue": "Green directional signs with white lettering. Pedestrian signs are the only ones in Europe with just one horizontal line behind the person. Warning signs have thin red outline and yellow background."},
+      {"category": "utility-poles", "clue": "Concrete poles with holes that stop about half a metre above the ground — unlike Hungarian/Romanian poles where holes extend to the ground."},
+      {"category": "language", "clue": "Frequent use of 'z' and unique 'ł'. Special characters: ó, ż, ś, ę, ń."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "CZ": {
+    "name": "Czech Republic",
+    "clues": [
+      {"category": "bollards", "clue": "Black bollard with unique fluorescent orange stripes and white rectangle on back."},
+      {"category": "language", "clue": "Only country using Ř, Ě, and Ů characters — instantly distinctive."},
+      {"category": "road-signs", "clue": "Sign borders are set apart from the edge by a strip matching the sign's background color. Thick black outline on town names. Blue directional signs with white arrows."},
+      {"category": "road-markings", "clue": "Solid outer lines with no center line on many roads."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "HU": {
+    "name": "Hungary",
+    "clues": [
+      {"category": "bollards", "clue": "Red rectangle on the front with a matching white rectangle on the reverse side."},
+      {"category": "utility-poles", "clue": "Concrete 'holey poles' with large holes extending all the way down to the ground — a famous GeoGuessr identifier."},
+      {"category": "road-signs", "clue": "Green directional signs with white inner and outer borders. Blue for M-numbered highways. Signs attached with four bolts in tall rectangular pattern."},
+      {"category": "language", "clue": "Vowels marked with one or two lines (resembling apostrophes). ő and ű are unique to Hungarian. 'Utca' means street."},
+      {"category": "license-plates", "clue": "Commercial vehicles (taxis, trucks) have yellow plates."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "RO": {
+    "name": "Romania",
+    "clues": [
+      {"category": "utility-poles", "clue": "Concrete 'holey poles' with white painted bottom and/or yellow markings — the most famous GeoGuessr one-clue identifier."},
+      {"category": "language", "clue": "Romance language with special letters ă, ș, and ț."},
+      {"category": "road-signs", "clue": "White text on blue directional signs. Red shields for major roads. Town entry signs have a yellow section with speed limit and city skyline."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "clues": [
+      {"category": "bollards", "clue": "Red rectangle on front, white rectangle on back."},
+      {"category": "utility-poles", "clue": "'Eiffel Tower-like' poles are a common sight."},
+      {"category": "language", "clue": "Cyrillic script. Settlement signs show names in both Latin and Cyrillic, sometimes only Cyrillic."},
+      {"category": "road-signs", "clue": "Blue or green directional signs with both Cyrillic and Latin scripts."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "GR": {
+    "name": "Greece",
+    "clues": [
+      {"category": "bollards", "clue": "Wedge-shaped bollards with rectangular reflector — red on front, white on back."},
+      {"category": "road-markings", "clue": "Double white or yellow center line is common."},
+      {"category": "road-signs", "clue": "Blue directional signs with Greek text in yellow and English in white. Yellow warning signs with red borders."},
+      {"category": "language", "clue": "Greek alphabet with distinctive softer-shaped letters. Unique script instantly identifiable."},
+      {"category": "license-plates", "clue": "Taxis have yellow plates. Standard EU white plates for regular vehicles."},
+      {"category": "landscape", "clue": "Miniature churches along roadsides are a distinctive Greek feature."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "TR": {
+    "name": "Turkey",
+    "clues": [
+      {"category": "bollards", "clue": "Fatter rectangular reflector, resembling Australian and Dutch designs."},
+      {"category": "utility-poles", "clue": "Metal poles with large holes — distinguished from similar Eastern European poles by material (metal vs. concrete)."},
+      {"category": "language", "clue": "Latin alphabet with special characters: ç, ğ, ı (dotless i), ö, ş, ü."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Varies from Mediterranean coast to arid central plateau. Distinctive mosque minarets visible in many areas."}
+    ]
+  },
+  "RU": {
+    "name": "Russia",
+    "clues": [
+      {"category": "license-plates", "clue": "Elongated and completely white — a rarity in Europe."},
+      {"category": "utility-poles", "clue": "White poles with distinctive black base — rarely seen elsewhere."},
+      {"category": "road-signs", "clue": "Blue directional signs with white Cyrillic lettering. Federal highways prefixed M, A, or P/R."},
+      {"category": "language", "clue": "Cyrillic script. Road signs in Cyrillic only (unlike Bulgaria which adds Latin)."},
+      {"category": "driving-side", "clue": "Drives on the right, but in Eastern Russia many cars have the steering wheel on the right side (Japanese imports)."},
+      {"category": "landscape", "clue": "Vast flat terrain. Road quality noticeably poor in rural areas — crumbling roads are an indicator."}
+    ]
+  },
+  "EE": {
+    "name": "Estonia",
+    "clues": [
+      {"category": "bollards", "clue": "Cylindrical with a rectangular reflector on the front and two circular ones on the back."},
+      {"category": "language", "clue": "Estonian uses Latin alphabet with special characters: õ, ä, ö, ü. Not related to neighboring Latvian/Lithuanian."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "LV": {
+    "name": "Latvia",
+    "clues": [
+      {"category": "bollards", "clue": "Thin bollards with a white rectangle on the front and two white circles on the back."},
+      {"category": "language", "clue": "Latvian uses Latin alphabet with macrons (ā, ē, ī, ū) and cedillas (ģ, ķ, ļ, ņ)."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "LT": {
+    "name": "Lithuania",
+    "clues": [
+      {"category": "bollards", "clue": "Wedge-style bollards with orange rectangular reflectors on front and white ones on back."},
+      {"category": "language", "clue": "Lithuanian uses Latin alphabet with special characters: ą, č, ę, ė, į, š, ų, ū, ž."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "HR": {
+    "name": "Croatia",
+    "clues": [
+      {"category": "bollards", "clue": "Red rectangle on front, white rectangle on back."},
+      {"category": "language", "clue": "Uses unique characters ž, š, and ć. High occurrence of j and z. 'Ulica' means street."},
+      {"category": "road-signs", "clue": "Yellow background with black outline direction signs, often with pencil-shaped tip. Blue street signs with white lettering."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Narrow and distinctive blue fire hydrants throughout the country."}
+    ]
+  },
+  "RS": {
+    "name": "Serbia",
+    "clues": [
+      {"category": "bollards", "clue": "Red rectangle is always positioned to one side, never in the center — distinctive from similar Balkan bollards."},
+      {"category": "camera-coverage", "clue": "Notable absence of an antenna on the Google Street View car."},
+      {"category": "language", "clue": "Uses both Cyrillic and Latin scripts. Unique Cyrillic letters: Ђ, Ћ. Internet suffix '.rs'."},
+      {"category": "road-signs", "clue": "Yellow background with black lettering, in Latin, Cyrillic, or both."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "AL": {
+    "name": "Albania",
+    "clues": [
+      {"category": "bollards", "clue": "Vertical red rectangle inside a black diagonal strip on front. Black extends to the top. White rectangle on rear."},
+      {"category": "language", "clue": "Frequent use of letters q, j, and k. Distinctive characters ç and ë."},
+      {"category": "road-signs", "clue": "Bold font with rounded corners. Blue directional signs with white text and arrow-shaped side."},
+      {"category": "camera-coverage", "clue": "Sky rifts are often visible when panning upward."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "ME": {
+    "name": "Montenegro",
+    "clues": [
+      {"category": "bollards", "clue": "Center-positioned red rectangular reflector on front."},
+      {"category": "language", "clue": "Latin script more commonly seen on signs. Features characters Č, Š, Ž, Ć, Ś."},
+      {"category": "road-signs", "clue": "Yellow background with black lettering. Many brown signs with white lettering."},
+      {"category": "camera-coverage", "clue": "Sky rifts are often visible when panning upward."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "MK": {
+    "name": "North Macedonia",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Notable absence of an antenna on the Google Street View car — key identifier."},
+      {"category": "language", "clue": "Cyrillic script with unique letters Ѓ and Ќ. Road signs show Latin text despite mostly Cyrillic signage."},
+      {"category": "road-signs", "clue": "Yellow directional signs with Cyrillic town name on top and Latin translation beneath."},
+      {"category": "utility-poles", "clue": "Poles often equipped with distinctive lamps."},
+      {"category": "bollards", "clue": "Red rectangle on front, white rectangle on back."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "SK": {
+    "name": "Slovakia",
+    "clues": [
+      {"category": "bollards", "clue": "Black bollard with unique fluorescent orange stripes and white rectangle on back — identical to Czech Republic."},
+      {"category": "language", "clue": "Distinct letters unique to Slovak: Ľ, Ô, Ä, Ŕ, and Ĺ."},
+      {"category": "road-signs", "clue": "Sign borders sit directly on the edge (unlike Czech where border is inset). Town names have thinner black outline. Directional signs are rectangular with small white arrows."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "SI": {
+    "name": "Slovenia",
+    "clues": [
+      {"category": "bollards", "clue": "Center-positioned red rectangular reflector on front."},
+      {"category": "language", "clue": "Includes special letters Č, Š, and Ž."},
+      {"category": "road-signs", "clue": "Black text on yellow directional background. Settlement signs have black text on yellow. Many signs have white or yellow sticker on back."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "UA": {
+    "name": "Ukraine",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Red Google car with long antenna visible in most regions."},
+      {"category": "license-plates", "clue": "Small section of yellow and blue on left side of plates."},
+      {"category": "utility-poles", "clue": "Many poles have base section painted white. Tree trunks also painted white at the base."},
+      {"category": "language", "clue": "Cyrillic with unique letters: ґ, і, ї, and є. 'Вулиця (vulytsya)' abbreviated 'вул.' means street."},
+      {"category": "road-signs", "clue": "Blue directional signs with Cyrillic on top and Latin equivalent below. Streetside objects often painted in blue and yellow (flag colors)."},
+      {"category": "bollards", "clue": "Red rectangle wider than those in Hungary, Bulgaria, or Croatia. Often appear weathered or damaged."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "US": {
+    "name": "United States",
+    "clues": [
+      {"category": "license-plates", "clue": "Short plates (not elongated like EU). Often colorful. Rear-only plates in some southeastern states."},
+      {"category": "road-signs", "clue": "Interstate shields (blue/red), US Highway shields (white/black), State Highway shields (unique per state). Yellow diamond warning signs."},
+      {"category": "road-markings", "clue": "Yellow center lines, white edge lines. Yellow marks the division between opposing traffic."},
+      {"category": "utility-poles", "clue": "Wooden poles with simple crossarms dominant in rural corridors."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "English. Speed in mph. Spanish signage common near Mexican border."}
+    ]
+  },
+  "CA": {
+    "name": "Canada",
+    "clues": [
+      {"category": "license-plates", "clue": "Short plates, similar to US style. Design varies by province."},
+      {"category": "road-signs", "clue": "Trans-Canada Highway signs (maple leaf on green). Provincial highway shields unique per province. Speed in km/h (unlike US)."},
+      {"category": "language", "clue": "English and French. Bilingual signs in Quebec and federally. French-only signs in Quebec."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Vast wilderness. Similar to northern US but with metric signage."}
+    ]
+  },
+  "MX": {
+    "name": "Mexico",
+    "clues": [
+      {"category": "bollards", "clue": "White and cigarette-shaped, with a black section near the base and a yellow section at the back."},
+      {"category": "utility-poles", "clue": "Octagonal-shaped concrete poles. Alternative crucifix-shaped design also common."},
+      {"category": "road-signs", "clue": "Federal highways use black/white curved shields with 'Mexico'. 'ALTO' stop signs instead of 'STOP'."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "Spanish."},
+      {"category": "landscape", "clue": "Pink taxis are unique to Mexico City (marked 'CDMX'). Large black water tanks on rooftops. Circular electricity meters on outer walls."}
+    ]
+  },
+  "BR": {
+    "name": "Brazil",
+    "clues": [
+      {"category": "utility-poles", "clue": "Rectangular ladder-like design at the bottom with long segments and small holes near the top."},
+      {"category": "road-markings", "clue": "Double yellow center lines with white outer lines."},
+      {"category": "road-signs", "clue": "Most Brazilian road signs have backs painted black. National highways use BR-xxx format."},
+      {"category": "language", "clue": "Portuguese with 'Ç' and 'ã'. Words often end in '-ção'. 'Rua' means street."},
+      {"category": "license-plates", "clue": "White (pre-2018) or white with blue strip. Red plates for commercial vehicles."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Reddish laterite soil in northern and central regions. Yellow-on-black chevrons throughout. BR Petrobras gas stations."}
+    ]
+  },
+  "AR": {
+    "name": "Argentina",
+    "clues": [
+      {"category": "utility-poles", "clue": "Round concrete poles supporting three electricity lines in an alternating pattern. Double-pole variants also common."},
+      {"category": "road-markings", "clue": "White dashes in center with continuous yellow line. Sometimes all-white road markings."},
+      {"category": "road-signs", "clue": "Red-on-white chevrons — unique in South America. Small black and white milestone signs showing 'RN' or 'RP' with kilometer numbers."},
+      {"category": "license-plates", "clue": "Many cars have a black blob on their license plates."},
+      {"category": "camera-coverage", "clue": "Front of the Street View car appears ghostly black."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "YPF gas stations. Trees between footpath and road in cities."}
+    ]
+  },
+  "CL": {
+    "name": "Chile",
+    "clues": [
+      {"category": "road-markings", "clue": "All-yellow road lines — unique in South America. All-white roads also common."},
+      {"category": "utility-poles", "clue": "Square concrete poles with indents on both sides and small pinholes in upper sections."},
+      {"category": "license-plates", "clue": "Orange plates for taxis and commercial vehicles."},
+      {"category": "camera-coverage", "clue": "White rear of Google car visible in large coverage areas."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "Spanish."}
+    ]
+  },
+  "CO": {
+    "name": "Colombia",
+    "clues": [
+      {"category": "license-plates", "clue": "Yellow license plates — distinctive in South America."},
+      {"category": "utility-poles", "clue": "Yellow and black stripes on poles. Octagonal poles found here (only country in Latin America besides Mexico with them). Very narrow white poles for signs."},
+      {"category": "road-signs", "clue": "Crosses on the backs of road signs. 'Pr' topped green kilometer markers."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Reddish sidewalk tiles. Rudimentary wooden fences in rural areas. Taxis have license plates printed on the side."}
+    ]
+  },
+  "PE": {
+    "name": "Peru",
+    "clues": [
+      {"category": "utility-poles", "clue": "Poles with 3 arms sticking out. Sign poles are distinctively striped in black and white. Poles mounted in elevated concrete blocks."},
+      {"category": "bollards", "clue": "Cigarette-shaped, sometimes with black stripes."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Tuk-tuks present — no other Latin American country has them."},
+      {"category": "language", "clue": "Spanish."}
+    ]
+  },
+  "EC": {
+    "name": "Ecuador",
+    "clues": [
+      {"category": "bollards", "clue": "Round bollards with two red stripes, or flat bollards with two red reflectors on a black background."},
+      {"category": "utility-poles", "clue": "Unique 'ladder pole' with numerous small indents resembling ladder steps. Also generic round concrete poles."},
+      {"category": "road-signs", "clue": "Square signs with white background common."},
+      {"category": "camera-coverage", "clue": "White car with short, thick 'stubby' antenna."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Double guardrails frequently used — much less common in other South American countries."}
+    ]
+  },
+  "UY": {
+    "name": "Uruguay",
+    "clues": [
+      {"category": "road-markings", "clue": "Triple lines: double yellow lines with white dashes in between — distinctive in the region."},
+      {"category": "utility-poles", "clue": "Poles with three upward-facing bulbs resembling a trident."},
+      {"category": "bollards", "clue": "Front painted white with a rectangular reflector near the top."},
+      {"category": "camera-coverage", "clue": "Front of Street View car appears ghostly black (similar to Argentina)."},
+      {"category": "landscape", "clue": "Green-painted stone kilometre markers are unique. Overcast weather, open grasslands with gentle hills. Trees between footpath and road in cities."},
+      {"category": "driving-side", "clue": "Drives on the right."}
+    ]
+  },
+  "BO": {
+    "name": "Bolivia",
+    "clues": [
+      {"category": "license-plates", "clue": "Cars have plates with a faint blue color."},
+      {"category": "road-signs", "clue": "Thick, unpainted posts for road signs."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "Spanish. Some indigenous language signage in rural areas."},
+      {"category": "landscape", "clue": "High altitude terrain on the Altiplano. Salt flats and arid landscapes in the west."}
+    ]
+  },
+  "JP": {
+    "name": "Japan",
+    "clues": [
+      {"category": "utility-poles", "clue": "Unique vertical yellow and black stripes. Small plates affixed to poles that vary by region."},
+      {"category": "license-plates", "clue": "Yellow plates for kei cars (small vehicles). White plates for standard vehicles."},
+      {"category": "language", "clue": "Japanese uses three scripts: hiragana, katakana, and kanji. Highly distinctive and instantly recognizable."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Well-maintained roads with precise markings. Vending machines everywhere. Distinctive architecture."},
+      {"category": "road-signs", "clue": "Blue hexagonal road number signs. Highly organized signage system."}
+    ]
+  },
+  "KR": {
+    "name": "South Korea",
+    "clues": [
+      {"category": "utility-poles", "clue": "Diagonal yellow and black stripes that do not extend all the way to the ground. Many feature a long, sharp pointed spike extending upwards from the top."},
+      {"category": "language", "clue": "Hangul — blocky geometric characters built from circles, lines, and squares. Instantly distinctive from Japanese/Chinese."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Mix of modern cities and mountainous terrain. Distinctive Korean apartment blocks."}
+    ]
+  },
+  "IN": {
+    "name": "India",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Street View taken by unofficial camera — low quality, everything appears slightly 'foggy'. Unique and easily recognizable."},
+      {"category": "license-plates", "clue": "White plates for regular vehicles. Green for electric vehicles. Yellow for trucks and transport."},
+      {"category": "language", "clue": "Hindi script with letters resembling upside-down and backwards lowercase 'h' and backwards 'F'. Horizontal line over letters (Devanagari)."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Chaotic traffic, auto-rickshaws, colorful trucks. Red laterite soil in some regions."}
+    ]
+  },
+  "ID": {
+    "name": "Indonesia",
+    "clues": [
+      {"category": "utility-poles", "clue": "Standard poles with three upward-facing bulbs. Some display red-white Indonesian flag as stripes on lower section. Lesser Sunda Islands have diagonal support beams."},
+      {"category": "license-plates", "clue": "Black plates divided into three white sections (vs. Malaysian two sections)."},
+      {"category": "language", "clue": "Indonesian (Bahasa Indonesia). 'Jl.' abbreviation for 'Jalan' (street) common on signs. Dutch-influenced words (vs. English in Malaysia). Company signs begin with 'PT'."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Tropical. TV satellite dishes commonly seen. Outer road lines always white."}
+    ]
+  },
+  "TH": {
+    "name": "Thailand",
+    "clues": [
+      {"category": "language", "clue": "Thai script identified by abundance of small circles on the ends of many letters."},
+      {"category": "bollards", "clue": "Alternating black-and-white colors with a square shape."},
+      {"category": "utility-poles", "clue": "Concrete or metal poles with small holes running up vertically. Street light poles have black-and-red or black-and-white paintings on the bottom."},
+      {"category": "road-markings", "clue": "Yellow middle lines (striped or solid) common. White middle lines also present."},
+      {"category": "road-signs", "clue": "Wooden sign posts painted white with black section on base. Milestone markers are white with script on 3 sides."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Tropical with palm trees, thick green vegetation, and visible dirt roads."}
+    ]
+  },
+  "PH": {
+    "name": "Philippines",
+    "clues": [
+      {"category": "utility-poles", "clue": "Wooden crucifix-style poles — most common type."},
+      {"category": "language", "clue": "English is one of two official languages — visible on most signs alongside Filipino."},
+      {"category": "road-signs", "clue": "European-style warning signs with thin red borders."},
+      {"category": "driving-side", "clue": "Drives on the right (unlike most Southeast Asian neighbors)."},
+      {"category": "landscape", "clue": "Many roads built with rectangular concrete blocks. Brightly colored jeepneys (mini buses). Distinct rickshaw bikes with sidecars."}
+    ]
+  },
+  "MY": {
+    "name": "Malaysia",
+    "clues": [
+      {"category": "utility-poles", "clue": "Mainland poles often have black rectangles with white lettering."},
+      {"category": "license-plates", "clue": "Black background with two white text blocks. Less common unified white/black variant exists."},
+      {"category": "bollards", "clue": "Various color combinations of black, white, grey, and red."},
+      {"category": "road-markings", "clue": "Black-and-white street markings and guardrails. Thick yellow lines perpendicular to road. Rare double white continuous center lines."},
+      {"category": "road-signs", "clue": "'AWAS' on warning signs. Distinctive yellow irregular hexagon for road numbers. Stop signs read 'BERHENTI'. 'Sdn Bhd' on business signs."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "Malay (similar to Indonesian but English-influenced rather than Dutch). Many signs in English."}
+    ]
+  },
+  "SG": {
+    "name": "Singapore",
+    "clues": [
+      {"category": "road-signs", "clue": "Pale green street signs with spaced-out bold font. Three-letter highway names (TPE, SLE, CTE). Standard European warning signs but on a square white shape instead of triangle — unique in the world."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English, Chinese, Malay, and Tamil on signs. Multilingual signage."},
+      {"category": "landscape", "clue": "Dense urban cityscape. Extremely clean streets and modern infrastructure."}
+    ]
+  },
+  "TW": {
+    "name": "Taiwan",
+    "clues": [
+      {"category": "utility-poles", "clue": "Cylindrical poles with lower section adorned with diagonal black and yellow stripes extending all the way to the ground."},
+      {"category": "language", "clue": "Traditional Chinese characters (vs. simplified used in mainland China)."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Mix of dense cities and mountainous terrain. Scooters everywhere."}
+    ]
+  },
+  "MN": {
+    "name": "Mongolia",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Black snorkel visible on the Google car — shared with Kenya."},
+      {"category": "language", "clue": "Cyrillic script (like Russian but with additional letters)."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Vast open steppe grasslands. Very few trees. Gers (yurts) visible in rural areas."}
+    ]
+  },
+  "KH": {
+    "name": "Cambodia",
+    "clues": [
+      {"category": "language", "clue": "Khmer script with small hooks on top of almost every symbol pointing to the right."},
+      {"category": "bollards", "clue": "Red and white — either striped or divided into two sections."},
+      {"category": "utility-poles", "clue": "Two common types: square ladder-style poles, and round poles with small holes."},
+      {"category": "road-signs", "clue": "Beer brand advertisements (Angkor, Ganzberg) on red signs common. Yellow warning signs often have white outline. Milestone markers are white with red top."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Wooden houses on stilts with multiple roof sections. Red-brown, light-blue, or orange wall colors."}
+    ]
+  },
+  "VN": {
+    "name": "Vietnam",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Coverage recorded on a motorbike — shows the motorbike outline, blurred outline, or a helmet when panning down."},
+      {"category": "language", "clue": "Vietnamese uses Latin alphabet with extensive diacritical marks: ơ, ư, ă, â, ê, ô, đ. Many tonal marks above/below letters."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Dense motorbike traffic. Rice paddies common in rural areas. Red laterite soil in some regions."}
+    ]
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Gen 3: blue, white, and red stripes resembling the French flag. Gen 4: 'low-cam' with wide circular blur — objects appear lower and roads wider."},
+      {"category": "bollards", "clue": "Small white and black stone bollards."},
+      {"category": "utility-poles", "clue": "Two types: holey poles with see-through holes in lower section, and poles with small holes in upper part."},
+      {"category": "license-plates", "clue": "White front plates, yellow rear plates."},
+      {"category": "language", "clue": "Sinhala with letters resembling 'C' forwards, backwards, or upside down. Very curvy script."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Very tropical with many palm trees. Distinct reddish soil. Black-and-white striped signposts."}
+    ]
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Visible bars underneath the Street View car and side view mirrors when panning down."},
+      {"category": "bollards", "clue": "Chimney-like appearance painted in alternating red and white sections."},
+      {"category": "language", "clue": "Bengali script with horizontal line over letters (like Hindi) and small triangles pointing to the left."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Rickshaws with bike at front and two wheels at back are common. Red and white fences near water."}
+    ]
+  },
+  "IL": {
+    "name": "Israel",
+    "clues": [
+      {"category": "license-plates", "clue": "Yellow license plates."},
+      {"category": "utility-poles", "clue": "Street lights with black and white stripes on their base."},
+      {"category": "language", "clue": "Hebrew script — reads right to left. Signs often trilingual: Hebrew, Arabic, English."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Arid/semi-arid terrain. Mix of modern and historic architecture."}
+    ]
+  },
+  "JO": {
+    "name": "Jordan",
+    "clues": [
+      {"category": "language", "clue": "Arabic script — reads right to left. Signs often bilingual: Arabic and English."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "landscape", "clue": "Desert terrain dominant. Sandy and rocky landscapes."}
+    ]
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "clues": [
+      {"category": "language", "clue": "Arabic and English on signs. High-quality bilingual signage."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "road-signs", "clue": "Modern, well-maintained green highway signs with Arabic and English. Speed in km/h."},
+      {"category": "landscape", "clue": "Desert surroundings with ultra-modern architecture in cities. Wide, well-maintained roads."}
+    ]
+  },
+  "ZA": {
+    "name": "South Africa",
+    "clues": [
+      {"category": "bollards", "clue": "Narrow red and white chevrons prevalent throughout."},
+      {"category": "road-markings", "clue": "Yellow edge lines with white center lines."},
+      {"category": "license-plates", "clue": "Yellow rear plates, white front plates."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English and Afrikaans on signs. Sometimes Zulu or other local languages."},
+      {"category": "landscape", "clue": "Varied terrain from coastal to savanna. Townships visible in many areas."}
+    ]
+  },
+  "KE": {
+    "name": "Kenya",
+    "clues": [
+      {"category": "camera-coverage", "clue": "Prominent black snorkel on the front right fender of the Google car."},
+      {"category": "license-plates", "clue": "Yellow rear plates, white front plates."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English and Swahili on signs."},
+      {"category": "landscape", "clue": "Red laterite soil common. Lush green vegetation in highlands. Savanna grasslands."}
+    ]
+  },
+  "NG": {
+    "name": "Nigeria",
+    "clues": [
+      {"category": "utility-poles", "clue": "Wooden ladder-style poles."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "English on signs (official language)."},
+      {"category": "landscape", "clue": "Dense urban areas in the south. Chaotic traffic. Yellow commercial vehicles (danfo buses) in Lagos."}
+    ]
+  },
+  "GH": {
+    "name": "Ghana",
+    "clues": [
+      {"category": "camera-coverage", "clue": "One bar of the roof rack wrapped with black duct tape — distinctive identifier."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "English on signs (official language)."},
+      {"category": "landscape", "clue": "Tropical vegetation. Red-orange laterite soil common."}
+    ]
+  },
+  "SN": {
+    "name": "Senegal",
+    "clues": [
+      {"category": "utility-poles", "clue": "Ladder-style poles."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "French on signs (official language)."},
+      {"category": "landscape", "clue": "Flat terrain. Baobab trees. Sandy soil in many areas."}
+    ]
+  },
+  "UG": {
+    "name": "Uganda",
+    "clues": [
+      {"category": "license-plates", "clue": "Yellow rear plates, white front plates."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English on signs (official language)."},
+      {"category": "landscape", "clue": "Red laterite soil with lush green vegetation — classic East African combination. Banana trees common. Boda-boda (motorcycle taxis)."}
+    ]
+  },
+  "TN": {
+    "name": "Tunisia",
+    "clues": [
+      {"category": "utility-poles", "clue": "Metallic wire-style poles."},
+      {"category": "language", "clue": "Arabic and French on signs. Latin and Arabic script mixed."},
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "camera-coverage", "clue": "Sky rifts sometimes visible (similar to Albania)."},
+      {"category": "landscape", "clue": "Mediterranean coast in north, arid/desert in south."}
+    ]
+  },
+  "BW": {
+    "name": "Botswana",
+    "clues": [
+      {"category": "utility-poles", "clue": "Poles with red and white chevron markings."},
+      {"category": "road-markings", "clue": "Yellow edge lines with white center lines (matching South Africa)."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English on signs."},
+      {"category": "landscape", "clue": "Flat, arid savanna. Kalahari Desert dominates much of the country."}
+    ]
+  },
+  "MG": {
+    "name": "Madagascar",
+    "clues": [
+      {"category": "driving-side", "clue": "Drives on the right."},
+      {"category": "language", "clue": "French and Malagasy on signs."},
+      {"category": "landscape", "clue": "Distinctive red laterite soil. Tropical vegetation. Unique baobab trees. Generally poor road conditions."}
+    ]
+  },
+  "SZ": {
+    "name": "Eswatini",
+    "clues": [
+      {"category": "utility-poles", "clue": "Wooden poles with three insulators on the side — simple design."},
+      {"category": "road-markings", "clue": "Yellow edge lines with white center lines (matching South Africa)."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "language", "clue": "English and siSwati on signs."}
+    ]
+  },
+  "AU": {
+    "name": "Australia",
+    "clues": [
+      {"category": "bollards", "clue": "White bollard with red reflector on front and grey reflector on back."},
+      {"category": "license-plates", "clue": "Short plates, not elongated. Design varies by state."},
+      {"category": "utility-poles", "clue": "Northern Territory has metal poles with holes. Tasmania has olive-colored metal wrappings ~2m up. South Australia uses unique 'Stobie poles' — steel on both sides, concrete in center."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Red soil in outback. Eucalyptus trees. Vast open spaces. Blurred imagery from outdated cameras in remote areas."},
+      {"category": "camera-coverage", "clue": "Gen 1 coverage in some older areas (very low quality, compression artifacts)."}
+    ]
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "clues": [
+      {"category": "bollards", "clue": "Red strip around the upper part of the bollard."},
+      {"category": "utility-poles", "clue": "Most poles have a lone piece of metal (usually silver or white) wrapping around them."},
+      {"category": "license-plates", "clue": "Short plates, similar to Australian style."},
+      {"category": "driving-side", "clue": "Drives on the left."},
+      {"category": "landscape", "clue": "Lush green hills and mountains. Dramatic varied terrain from mountains to coastline. Sheep farming everywhere."},
+      {"category": "language", "clue": "English. Some Māori place names and bilingual signs."}
+    ]
+  }
+}
